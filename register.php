@@ -18,6 +18,8 @@
 </html>
 
 <?php
+if(isset($_POST['submit'])){
+    
 require('connect.php');
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -49,5 +51,6 @@ if(isset($_POST['submit'])){
     }else{
         echo "Please fill in all the fields.";
     }
+}
 }
 ?>
